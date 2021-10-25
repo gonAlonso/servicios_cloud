@@ -25,5 +25,5 @@ eureka:
   instance:
     instance-id: instancia_A
 
-service:
-  url: http://servicio-productos/
+#service:
+#  url: http://servicio-productos/
