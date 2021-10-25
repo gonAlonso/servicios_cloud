@@ -3,8 +3,8 @@ server:
   
 
 spring:
-  application:
-    name: servicio-pedidos
+  #application:
+    #name: servicio-pedidos
   datasource:
     password: admin123456
     username: root
