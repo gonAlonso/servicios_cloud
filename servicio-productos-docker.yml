@@ -1,0 +1,34 @@
+server:
+  port: 8000
+
+spring:
+#  datasource:
+#    driverClassName: org.h2.Driver
+    #password: password
+#    url: jdbc:h2:mem:testdb
+#    username: sa
+#  h2:
+#    console:
+#      enabled: true
+#  jpa:
+#    database-platform: org.hibernate.dialect.H2Dialect
+  datasource:
+    password: admin123456
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cursosformacion
+  jpa:
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  #application:
+    #name: servicio-productos-docker
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    instance-id: instancia_A
